@@ -2,8 +2,8 @@
 ## Minimal Fortran module
 
 A minimal Fortran extension module built using `f2py` and `meson-python`.
-For testing and debugging the compilation with [Pyodide](https://pyodide.org/en/stable/index.html).
-My first mixed Python and Fortran module, built with `mesonpy`. For compilation with Pyodide.
+For testing and debugging the compilation with
+[Pyodide](https://pyodide.org/en/stable/index.html).
 
 The module defines 3 wrapped Fortran functions:
 
