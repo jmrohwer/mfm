@@ -1,4 +1,4 @@
-project('mwm',
+project('mfm',
         ['c', 'fortran'],
         version : '1.0',
         meson_version: '>= 1.2.3'
@@ -17,6 +17,5 @@ incdir_f2py = incdir_numpy / '..' / '..' / 'f2py' / 'src'
 fortranobject_c = incdir_f2py / 'fortranobject.c'
 
 inc_np = include_directories(incdir_numpy, incdir_f2py)
-# quadmath_dep = fc.find_library('quadmath', required: false)
 
-subdir('mwm')
+subdir('mfm')

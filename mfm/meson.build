@@ -1,13 +1,12 @@
-mymodule_dir = py.get_install_dir() / 'mwm'
+mymodule_dir = py.get_install_dir() / 'mfm'
 
 py.install_sources([
     '__init__.py'
   ],
-  subdir: 'mwm'
+  subdir: 'mfm'
 )
 
 pure_subdirs = [
-    'pymath',
     'tests'
 ]
 

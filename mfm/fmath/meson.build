@@ -13,13 +13,12 @@ py.extension_module('fmath',
                      include_directories: inc_np,
                      dependencies : [
                      py_dep,
-                     # quadmath_dep,
                      ],
                      install : true,
-                     subdir: 'mwm/fmath')
+                     subdir: 'mfm/fmath')
 
 py.install_sources([
     '__init__.py'
   ],
-  subdir: 'mwm/fmath'
+  subdir: 'mfm/fmath'
 )
