@@ -1,0 +1,20 @@
+C FILE: FMATH.F
+      SUBROUTINE FADD(X, Y, Z)
+      DOUBLE PRECISION X
+      DOUBLE PRECISION Y
+      DOUBLE PRECISION Z
+      Z = X+Y
+      END
+
+      SUBROUTINE FMULT(X, Y, Z)
+      DOUBLE PRECISION X
+      DOUBLE PRECISION Y
+      DOUBLE PRECISION Z
+      Z = X*Y
+      END
+
+      SUBROUTINE HELLO()
+      PRINT*,"Hello from fortran"
+      END
+
+C END FILE FMATH.F
