@@ -19,3 +19,21 @@ mfm.fmath.fadd(x, y)
 mfm.fmath.fmult(x, y)
     Multiplies numbers `x` and `y`, casts result as float.
 ```
+
+## Build instructions
+
+1. Clone the repo:
+   ```shell 
+   $ git clone https://github.com/jmrohwer/mfm.git
+   ```
+2. Build / install:
+   ```shell
+   $ cd mfm
+   $ python -m build .      or
+   $ pip install .
+   ```
+3. Test (requires `pytest`):
+   ```python
+   import mfm
+   mfm.test()
+   ```
