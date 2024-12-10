@@ -1,20 +1,24 @@
-fmath_wrappers = custom_target('fmathmodule.c',
+fmath_wrappers = custom_target('fmath_wrappers',
   input : ['fmath.pyf'],
   output : ['fmathmodule.c', 'fmath-f2pywrappers.f'],
   command : [py, '-m', 'numpy.f2py', '@INPUT@', '--build-dir', '@OUTDIR@']
 )
 
+fmath_lib = static_library('fmath_lib',
+  'fmath.f',
+  fortran_args: [fortran_ignore_warnings],
+  override_options: ['b_lto=false'],
+  gnu_symbol_visibility: 'hidden',
+)
+
 py.extension_module('fmath',
-                     [
-                         'fmath.f',
-                         fmath_wrappers,
-                         fortranobject_c
-                     ],
+                     fmath_wrappers,
+                     link_with: [fmath_lib],
+                     c_args: [Wno_unused_variable],
+                     dependencies: [py_dep, fortranobject_dep],
+                     install: true,
+                     link_language: 'fortran',
                      include_directories: inc_np,
-                     dependencies : [
-                     py_dep,
-                     ],
-                     install : true,
                      subdir: 'mfm/fmath')
 
 py.install_sources([

@@ -3,7 +3,6 @@ project('mfm',
         version : '1.0',
         meson_version: '>= 1.2.3'
 )
-fc = meson.get_compiler('fortran')
 
 py = import('python').find_installation(pure: false)
 py_dep = py.dependency()
@@ -17,5 +16,11 @@ incdir_f2py = incdir_numpy / '..' / '..' / 'f2py' / 'src'
 fortranobject_c = incdir_f2py / 'fortranobject.c'
 
 inc_np = include_directories(incdir_numpy, incdir_f2py)
+
+cc = meson.get_compiler('c')
+ff = meson.get_compiler('fortran')
+if ff.has_argument('-Wno-conversion')
+  add_project_arguments('-Wno-conversion', language: 'fortran')
+endif
 
 subdir('mfm')
