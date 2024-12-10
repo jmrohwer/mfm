@@ -1,10 +1,10 @@
 package:
   name: mfm
-  version: 1.0.1
+  version: 1.0.2
   top-level:
     - mfm
 source:
-  url: https://github.com/jmrohwer/mfm/archive/refs/tags/v1.0.1.zip
+  url: https://github.com/jmrohwer/mfm/archive/refs/tags/v1.0.2.zip
   sha256: 286deb6dadc37d588b1db17a97f840027da8ac1362fe70e1e25d45cc13089803
 build:
   cflags: |

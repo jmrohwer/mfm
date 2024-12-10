@@ -145,9 +145,9 @@ double_from_pyobj(double* v, PyObject *obj, const char *errmess)
 
 
 /* See f2py2e/rules.py */
-extern void F_FUNC(fadd,FADD)(double*,double*,double*);
-extern void F_FUNC(fmult,FMULT)(double*,double*,double*);
-extern void F_FUNC(hello,HELLO)(void);
+extern int F_FUNC(fadd,FADD)(double*,double*,double*);
+extern int F_FUNC(fmult,FMULT)(double*,double*,double*);
+extern int F_FUNC(hello,HELLO)(void);
 /*eof externroutines*/
 
 /******************** See f2py2e/capi_rules.py: usercode1 ********************/
