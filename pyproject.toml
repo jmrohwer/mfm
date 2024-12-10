@@ -11,7 +11,7 @@ compile = ['-j4']
 
 [project]
 name = 'mfm'
-version = '1.0.3'
+version = '1.0.4'
 packages = ['mfm', 'mwm.fmath']
 dependencies = ['numpy']
 description = 'Project with mixed pure Python and Fortran sources'

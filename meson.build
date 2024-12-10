@@ -1,6 +1,6 @@
 project('mfm',
         ['c', 'fortran'],
-        version : '1.0.3',
+        version : '1.0.4',
         meson_version: '>= 1.2.3'
 )
 

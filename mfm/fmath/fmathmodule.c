@@ -147,7 +147,7 @@ double_from_pyobj(double* v, PyObject *obj, const char *errmess)
 /* See f2py2e/rules.py */
 extern int F_FUNC(fadd,FADD)(double*,double*,double*);
 extern int F_FUNC(fmult,FMULT)(double*,double*,double*);
-extern int F_FUNC(hello,HELLO)(void);
+extern int F_FUNC(hello,HELLO)();
 /*eof externroutines*/
 
 /******************** See f2py2e/capi_rules.py: usercode1 ********************/
@@ -328,7 +328,7 @@ hello()\n\nWrapper for ``hello``.\
 static PyObject *f2py_rout_fmath_hello(const PyObject *capi_self,
                            PyObject *capi_args,
                            PyObject *capi_keywds,
-                           int (*f2py_func)(void)) {
+                           int (*f2py_func)()) {
     PyObject * volatile capi_buildvalue = NULL;
     volatile int f2py_success = 1;
 /*decl*/
