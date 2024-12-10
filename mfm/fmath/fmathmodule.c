@@ -170,7 +170,7 @@ z = fadd(x,y)\n\nWrapper for ``fadd``.\
 static PyObject *f2py_rout_fmath_fadd(const PyObject *capi_self,
                            PyObject *capi_args,
                            PyObject *capi_keywds,
-                           void (*f2py_func)(double*,double*,double*)) {
+                           int (*f2py_func)(double*,double*,double*)) {
     PyObject * volatile capi_buildvalue = NULL;
     volatile int f2py_success = 1;
 /*decl*/
@@ -251,7 +251,7 @@ z = fmult(x,y)\n\nWrapper for ``fmult``.\
 static PyObject *f2py_rout_fmath_fmult(const PyObject *capi_self,
                            PyObject *capi_args,
                            PyObject *capi_keywds,
-                           void (*f2py_func)(double*,double*,double*)) {
+                           int (*f2py_func)(double*,double*,double*)) {
     PyObject * volatile capi_buildvalue = NULL;
     volatile int f2py_success = 1;
 /*decl*/
@@ -328,7 +328,7 @@ hello()\n\nWrapper for ``hello``.\
 static PyObject *f2py_rout_fmath_hello(const PyObject *capi_self,
                            PyObject *capi_args,
                            PyObject *capi_keywds,
-                           void (*f2py_func)(void)) {
+                           int (*f2py_func)(void)) {
     PyObject * volatile capi_buildvalue = NULL;
     volatile int f2py_success = 1;
 /*decl*/
