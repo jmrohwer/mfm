@@ -4,8 +4,8 @@ package:
   top-level:
     - mfm
 source:
-  url: https://github.com/jmrohwer/mfm/archive/refs/tags/v1.0.0.zip
-  sha256: 0df34abc86bb4d915de1238a660cc7028351ff04e813345021542ab5e13602bd
+  url: https://github.com/jmrohwer/mfm/archive/refs/tags/v1.0.1.zip
+  sha256: 286deb6dadc37d588b1db17a97f840027da8ac1362fe70e1e25d45cc13089803
 build:
   cflags: |
     -I$(WASM_LIBRARY_DIR)/include
