@@ -5,7 +5,7 @@ package:
     - mfm
 source:
   url: https://github.com/jmrohwer/mfm/archive/refs/tags/v1.0.2.zip
-  sha256: 286deb6dadc37d588b1db17a97f840027da8ac1362fe70e1e25d45cc13089803
+  sha256: d8a6b8217e0ecd9e42ecf64befac6b41f3c2f58f3b3c81cedd17dd846cfdd937
 build:
   cflags: |
     -I$(WASM_LIBRARY_DIR)/include
